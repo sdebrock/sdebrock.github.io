@@ -375,7 +375,7 @@ function update(){
     ctx.fillText("CRESTS COLLECTED: ",width-185,25);
     ctx.fillText(collected,width-25,25);
     
-    if (collected == 13 && player.lives >= 0){
+    if (collected == 13 && player.lives > 0){
         if (fTime == 0){
             fTime = timer;
         }
@@ -390,7 +390,7 @@ function update(){
 
     }
     
-    if (player.lives == 0 && collected<13){
+    if (player.lives == 0 && collected<=13){
         if (fTime == 0){
             fTime = timer;
         }
