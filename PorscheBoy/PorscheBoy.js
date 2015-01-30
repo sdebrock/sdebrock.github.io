@@ -390,7 +390,7 @@ function update(){
 
     }
     
-    if (player.lives == 0 && collected<=13){
+    if (player.lives == 0 && collected<13){
         if (fTime == 0){
             fTime = timer;
         }
